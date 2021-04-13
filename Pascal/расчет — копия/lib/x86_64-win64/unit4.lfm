@@ -1,0 +1,175 @@
+object graf: Tgraf
+  Left = 535
+  Height = 534
+  Top = 241
+  Width = 972
+  Caption = 'График'
+  ClientHeight = 534
+  ClientWidth = 972
+  DesignTimePPI = 120
+  LCLVersion = '1.8.0.6'
+  object Chart1: TChart
+    Left = 200
+    Height = 534
+    Top = 0
+    Width = 772
+    AxisList = <    
+      item
+        TickColor = clInfoText
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+      end    
+      item
+        TickColor = clInfoText
+        Alignment = calBottom
+        Minors = <>
+      end>
+    BackColor = clInfoText
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Frame.Color = clInfoBk
+    Frame.Mode = pmNotCopy
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'График аппроксимирующей функции'
+    )
+    Title.Visible = True
+    Align = alRight
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Color = clBtnShadow
+    object approximationSeries: TLineSeries
+      Legend.Visible = False
+      LinePen.Cosmetic = False
+      LinePen.Mode = pmBlack
+      LinePen.Style = psinsideFrame
+      LinePen.Width = 2
+      Pointer.HorizSize = 2
+      Pointer.Pen.Color = clNavy
+      Pointer.Pen.Cosmetic = False
+      Pointer.Pen.Style = psinsideFrame
+      Pointer.Pen.Width = 4
+      Pointer.Style = psCircle
+      Pointer.VertSize = 2
+    end
+    object experimentalPoints: TLineSeries
+      Legend.Visible = False
+      LinePen.Color = clRed
+      LinePen.Style = psinsideFrame
+      LinePen.Width = 4
+      LineType = ltNone
+      Pointer.HorizSize = 2
+      Pointer.Pen.Color = clRed
+      Pointer.Pen.Cosmetic = False
+      Pointer.Pen.Width = 4
+      Pointer.VertSize = 2
+      ShowPoints = True
+    end
+    object scaleSeries: TLineSeries
+      Legend.Visible = False
+      LineType = ltNone
+    end
+  end
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 305
+    Top = 229
+    Width = 200
+    Align = alCustom
+    Anchors = [akTop, akLeft, akBottom]
+    Color = clDefault
+    ColCount = 3
+    FixedCols = 0
+    Flat = True
+    RowCount = 1
+    TabOrder = 1
+    ColWidths = (
+      25
+      74
+      74
+    )
+    Cells = (
+      3
+      0
+      0
+      ' N '
+      1
+      0
+      '       X'
+      2
+      0
+      '       Y'
+    )
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 232
+    Top = 0
+    Width = 200
+    ClientHeight = 232
+    ClientWidth = 200
+    TabOrder = 2
+    object vidfunc: TLabel
+      Left = 8
+      Height = 20
+      Top = 8
+      Width = 154
+      Caption = 'Вид функции: y=a*x+b'
+      ParentColor = False
+    end
+    object aproksim: TLabel
+      Left = 8
+      Height = 60
+      Top = 32
+      Width = 148
+      Caption = 'Уравнение '#13#10'аппроксимирующей '#13#10'функции:'
+      ParentColor = False
+      WordWrap = True
+    end
+    object Panel2: TPanel
+      Left = 0
+      Height = 136
+      Top = 96
+      Width = 200
+      BevelColor = clWindowText
+      BorderStyle = bsSingle
+      ClientHeight = 132
+      ClientWidth = 196
+      Color = clScrollBar
+      ParentColor = False
+      TabOrder = 0
+      object yravnenie: TLabel
+        Left = 8
+        Height = 20
+        Top = 8
+        Width = 4
+        Caption = ' '
+        ParentColor = False
+      end
+      object koffa: TLabel
+        Left = 8
+        Height = 20
+        Top = 40
+        Width = 4
+        Caption = ' '
+        ParentColor = False
+      end
+      object koffb: TLabel
+        Left = 8
+        Height = 20
+        Top = 72
+        Width = 4
+        Caption = ' '
+        ParentColor = False
+      end
+      object skoa: TLabel
+        Left = 8
+        Height = 20
+        Top = 104
+        Width = 4
+        Caption = ' '
+        ParentColor = False
+      end
+    end
+  end
+end

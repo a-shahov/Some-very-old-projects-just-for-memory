@@ -1,0 +1,11 @@
+Case 5: P's parent is red, but U's uncle is black, the current node N is the
+ left child of P and P is the left child of G. In this case, the tree is rotated 
+by G. The result is a tree in which the former parent of P is now the parent and
+ the current node N and the former grandfather G. It is known that G is black, 
+since its former descendant P could not otherwise be red (without violating Proper
+ty 4). Then the colors of P and G change and as a result the tree satisfies Proper
+ty 4 (Both children of any red node are black). Property 5 (All paths from any giv
+en node to leaf nodes contain the same number of black nodes) also remains true,
+ since all paths that go through any of these three nodes previously went through
+ G, so now they all go through P. B in each case, of these three nodes, only one 
+is colored black.

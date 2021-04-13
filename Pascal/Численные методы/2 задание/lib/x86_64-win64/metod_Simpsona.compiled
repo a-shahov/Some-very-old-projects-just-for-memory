@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.0.4\bin\x86_64-win64\fpc.exe" Date="1317892579"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq &quot;-FiC:\Users\Андрей\Desktop\программирование\Численные методы\2 задание\lib\x86_64-win64&quot; &quot;-FuC:\Users\Андрей\Desktop\программирование\Численные методы\2 задание\&quot; &quot;-FUC:\Users\Андрей\Desktop\программирование\Численные методы\2 задание\lib\x86_64-win64\&quot; &quot;-FEC:\Users\Андрей\Desktop\программирование\Численные методы\2 задание\&quot; &quot;-oC:\Users\Андрей\Desktop\программирование\Численные методы\2 задание\metod_Simpsona.exe&quot; metod_Simpsona.pas"/>
+</CONFIG>
